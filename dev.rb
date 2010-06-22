@@ -5,7 +5,7 @@ installer 'iphone tools' do
     which 'autoconf' and
     which 'make' and
     which 'ld' and
-    file_exists? '/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator.app/Contents/MacOS/iPhone Simulator'
+    '/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator.app/Contents/MacOS/iPhone Simulator'.p.exists?
   }
 
   define_var :source,
