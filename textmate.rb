@@ -11,7 +11,3 @@ dep 'textmate helper' do
   met? { which 'mate' }
   meet { shell "ln -sf '#{app_dir('TextMate.app') / 'Contents/SharedSupport/Support/bin/mate'}' /usr/local/bin/mate" }
 end
-
-dep "textmate bundles" do
-  requires 'TextMate.app'
-end
