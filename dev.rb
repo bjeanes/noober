@@ -1,6 +1,4 @@
-dep
-
-installer 'xcode tools' do
+installer 'iphone tools' do
   met? { 
     which 'gcc' and 
     which 'g++' and

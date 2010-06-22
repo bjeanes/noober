@@ -1,5 +1,5 @@
 dep 'noober' do
-  requires 'build tools',
+  requires 'iphone tools',
            'homebrew',
            'macports',
            'textmate',
