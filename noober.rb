@@ -1,5 +1,6 @@
 dep 'noober' do
-  requires 'build tools',
+  requires 'iphone sdk',
+           'llvm in path',
            'homebrew',
            'macports',
            'textmate',
