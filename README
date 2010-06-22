@@ -1,0 +1,23 @@
+Setting up a machine for development involves a LOT of dependencies and time
+
+* Developer Tools + iPhone SDK/XCode
+* Homebrew
+* Git
+* Textmate + Bundles
+* RVM + standard rubies + gems
+* MacVIM + plugins
+* passenger
+* Sequel Pro
+* MySQL / Postgres
+* Skype
+* Firefox + extensions (firebug esp)
+* Chrome + extensions
+* ZSH
+* Mailplane
+* Adium
+* Skitch
+* MockSMTP
+* GitX
+* Growl
+* SIMBL
+* Set up iChat to have Bonjour (always on)
