@@ -33,5 +33,5 @@ dep "textmate bundles" do
 end
 
 bundles.each do |name, url|
-  tmbundle name { source "git://github.com/#{url}" }
+  tmbundle(name) { source "git://github.com/#{url}" }
 end
