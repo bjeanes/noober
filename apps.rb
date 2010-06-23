@@ -6,7 +6,8 @@ dep 'apps' do
            'Firefox.app',
            'TextMate.app',
            'Sequel Pro.app',
-           'Mailplane.app'
+           'Mailplane.app',
+           # 'MockSMTP.app',
 
            'textmate'
 end

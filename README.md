@@ -21,6 +21,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 ### Started
 
 * Developer Tools + iPhone SDK/XCode
+* MockSMTP (not unpacking the zip)
 
 ### Future
 * RVM + standard rubies + gems
@@ -30,7 +31,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Firefox extensions (firebug esp)
 * Chrome extensions
 * ZSH
-* MockSMTP
 * GitX
 * Growl
 * SIMBL
