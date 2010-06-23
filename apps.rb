@@ -1,7 +1,8 @@
 dep 'apps' do
-  requires 'textmate',
-           'Adium.app',
+  requires 'Adium.app',
            'Skitch.app',
            'Skype.app',
-           'Google Chrome.app'
+           'Google Chrome.app',
+           'Firefox.app',
+           'TextMate.app'
 end

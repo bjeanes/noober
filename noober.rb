@@ -3,5 +3,6 @@ dep 'noober' do
            'homebrew',
            'macports',
            'git',
-           'apps'
+           'apps',
+           'textmate'
 end
