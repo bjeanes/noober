@@ -14,6 +14,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * MacPorts
 * Skype
 * Chrome
+* Firefox
 
 ### Started
 
@@ -25,7 +26,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Passenger
 * Sequel Pro
 * MySQL / Postgres
-* Firefox + extensions (firebug esp)
+* Firefox extensions (firebug esp)
 * Chrome extensions
 * ZSH
 * Mailplane
