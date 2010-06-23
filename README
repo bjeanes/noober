@@ -21,6 +21,12 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Growl
 * SIMBL
 * Set up iChat to have Bonjour (always on)
+* Colemak / QWERTY / Dvorak / Backspace on capslock hack
+* latest MacRuby
+* Bind / DNSMasq
 
-MISC
+MISC/hacks/prefs to set
 * sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
+
+NOTES
+* Use Sparkle RSS locations to get the latest version of each app for download so versions don't need to be maintained
