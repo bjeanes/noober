@@ -8,6 +8,7 @@ dep 'apps' do
            'Sequel Pro.app',
            'Mailplane.app',
            # 'MockSMTP.app',
+           'GitX.app',
 
            'textmate'
 end
