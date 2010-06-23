@@ -16,6 +16,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Chrome
 * Firefox
 * Sequel Pro
+* Mailplane
 
 ### Started
 
@@ -29,7 +30,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Firefox extensions (firebug esp)
 * Chrome extensions
 * ZSH
-* Mailplane
 * MockSMTP
 * GitX
 * Growl
