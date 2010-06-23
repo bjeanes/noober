@@ -1,9 +1,22 @@
+# Noober
+
 Setting up a machine for development involves a LOT of dependencies and time
 
-* Developer Tools + iPhone SDK/XCode
+## Ideas
+
+### Done
+
 * Homebrew
-* Git
 * Textmate + Bundles
+* Adium
+* Skitch
+
+### Started
+
+* Developer Tools + iPhone SDK/XCode
+
+### Future
+* Git
 * RVM + standard rubies + gems
 * MacVIM + plugins
 * Passenger
@@ -14,8 +27,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Chrome + extensions
 * ZSH
 * Mailplane
-* Adium
-* Skitch
 * MockSMTP
 * GitX
 * Growl
@@ -28,10 +39,12 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Bash 4 (from homebrew?)
 * Setup dot-files
 
-MISC/hacks/prefs to set
-* sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
+## Misc/Hacks/Preferences to set
+
+* `sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport`
 * turn universal access on (for applescripting interfaces, etc)
 
-NOTES
+## Notes
+
 * Use Sparkle RSS locations to get the latest version of each app for download so versions don't need to be maintained
 * Standard way to apply licenses to everything?
