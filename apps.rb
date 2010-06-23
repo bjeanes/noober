@@ -6,4 +6,6 @@ dep 'apps' do
            'Firefox.app',
            'TextMate.app',
            'Sequel Pro.app'
+
+           'textmate'
 end
