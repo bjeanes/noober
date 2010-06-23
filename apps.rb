@@ -4,5 +4,6 @@ dep 'apps' do
            'Skype.app',
            'Google Chrome.app',
            'Firefox.app',
-           'TextMate.app'
+           'TextMate.app',
+           'Sequel Pro.app'
 end

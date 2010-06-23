@@ -15,6 +15,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Skype
 * Chrome
 * Firefox
+* Sequel Pro
 
 ### Started
 
@@ -24,7 +25,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * RVM + standard rubies + gems
 * MacVIM + plugins
 * Passenger
-* Sequel Pro
 * MySQL / Postgres
 * Firefox extensions (firebug esp)
 * Chrome extensions
