@@ -3,5 +3,5 @@ dep 'apps' do
            'Adium.app',
            'Skitch.app',
            'Skype.app',
-           'Chrome.app'
+           'Google Chrome.app'
 end
