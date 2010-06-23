@@ -1,5 +1,5 @@
 dep 'apps' do
   requires 'textmate',
-           'adium',
-           'skitch'
+           'Adium.app',
+           'Skitch.app'
 end
