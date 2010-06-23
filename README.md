@@ -49,3 +49,4 @@ Setting up a machine for development involves a LOT of dependencies and time
 
 * Use Sparkle RSS locations to get the latest version of each app for download so versions don't need to be maintained
 * Standard way to apply licenses to everything?
+* use `system_profiler SPApplicationsDataType` to get a list of all installed applications
