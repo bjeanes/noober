@@ -41,6 +41,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * LaunchBar
 * Bash 4 (from homebrew?)
 * Setup dot-files
+* Fluid
 
 ## Misc/Hacks/Preferences to set
 
