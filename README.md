@@ -8,15 +8,16 @@ Setting up a machine for development involves a LOT of dependencies and time
 
 * Homebrew
 * Textmate + Bundles
+* Git
 * Adium
 * Skitch
+* MacPorts
 
 ### Started
 
 * Developer Tools + iPhone SDK/XCode
 
 ### Future
-* Git
 * RVM + standard rubies + gems
 * MacVIM + plugins
 * Passenger
