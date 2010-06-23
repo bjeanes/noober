@@ -6,7 +6,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Textmate + Bundles
 * RVM + standard rubies + gems
 * MacVIM + plugins
-* passenger
+* Passenger
 * Sequel Pro
 * MySQL / Postgres
 * Skype
@@ -24,9 +24,14 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Colemak / QWERTY / Dvorak / Backspace on capslock hack
 * latest MacRuby
 * Bind / DNSMasq
+* LaunchBar
+* Bash 4 (from homebrew?)
+* Setup dot-files
 
 MISC/hacks/prefs to set
 * sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
+* turn universal access on (for applescripting interfaces, etc)
 
 NOTES
 * Use Sparkle RSS locations to get the latest version of each app for download so versions don't need to be maintained
+* Standard way to apply licenses to everything?
