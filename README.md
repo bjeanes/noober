@@ -12,6 +12,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Adium
 * Skitch
 * MacPorts
+* Skype
 
 ### Started
 
@@ -23,7 +24,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Passenger
 * Sequel Pro
 * MySQL / Postgres
-* Skype
 * Firefox + extensions (firebug esp)
 * Chrome + extensions
 * ZSH
