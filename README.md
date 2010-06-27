@@ -47,12 +47,17 @@ Setting up a machine for development involves a LOT of dependencies and time
 * TextMate ProjectPlus plugin
 * Teleport
 * Telefrag + AppleScript hack to inject
+* PrefPanes
+  * Perian
+  * Passenger
+  * MySQL
 * Customised Terminal profiles
   * Visor (http://cloud.github.com/downloads/darwin/visor/Visor-2.2-84d1873.zip)
   * Blurminal (http://github.com/timmfin/Blurminal/raw/master/Blurminal-SL-64bit.bundle.zip)
     * `defaults write com.apple.Terminal ‘Blurminal Radius’ -float 1.0`
   * ANSI colours (http://github.com/timmfin/terminalcolours/raw/master/TerminalColours-SL-64bit.zip)
   * terminal keyboard shortcuts: (http://bjeanes.com/2010/06/26/option-keyboard-shortcuts-for-terminal-and-iterm)
+* PlugSuit (http://www.macupdate.com/download.php/26068/download)
 
 ## Misc/Hacks/Preferences to set
 
