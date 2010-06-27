@@ -5,5 +5,6 @@ dep 'noober' do
            'git',
            'apps',
            'textmate',
-           'SIMBL'
+           'SIMBL',
+           'hax'
 end
