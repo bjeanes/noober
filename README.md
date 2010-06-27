@@ -18,7 +18,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Sequel Pro
 * Mailplane
 * GitX
-* SizeUp
 
 ### Started
 
@@ -34,7 +33,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Chrome extensions
 * ZSH
 * Growl
-* SIMBL
+* SIMBL (http://www.culater.net/dl/files/SIMBL-0.9.7a.zip)
 * Set up iChat to have Bonjour (always on)
 * Colemak / QWERTY / Dvorak / Backspace on capslock hack
 * latest MacRuby
@@ -43,11 +42,23 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Bash 4 (from homebrew?)
 * Setup dot-files
 * Fluid
+* http://github.com/xvzf/vcprompt
+* SizeUp
+* TextMate ProjectPlus plugin
+* Teleport
+* Telefrag + AppleScript hack to inject
+* Customised Terminal profiles
+  * Visor (http://cloud.github.com/downloads/darwin/visor/Visor-2.2-84d1873.zip)
+  * Blurminal (http://github.com/timmfin/Blurminal/raw/master/Blurminal-SL-64bit.bundle.zip)
+    * `defaults write com.apple.Terminal ‘Blurminal Radius’ -float 1.0`
+  * ANSI colours (http://github.com/timmfin/terminalcolours/raw/master/TerminalColours-SL-64bit.zip)
+  * terminal keyboard shortcuts: (http://bjeanes.com/2010/06/26/option-keyboard-shortcuts-for-terminal-and-iterm)
 
 ## Misc/Hacks/Preferences to set
 
 * `sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport`
 * turn universal access on (for applescripting interfaces, etc)
+* Set up file/folder reference patterns in TextMate
 
 ## Notes
 
