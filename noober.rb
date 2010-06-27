@@ -4,5 +4,6 @@ dep 'noober' do
            'macports',
            'git',
            'apps',
-           'textmate'
+           'textmate',
+           'SIMBL'
 end
