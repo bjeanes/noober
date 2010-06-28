@@ -12,20 +12,15 @@ meta :simbl_bundle, :for => :osx do
     end
     
     met? {
-      ("~/Library/Application Support/SIMBL/Plugins" / name).exists? or false
-      # ("/Library/Application Support/SIMBL/Plugins" / name).exists?
+      path.exists? or path.to_s.gsub(/^~/,'').p.exists?
     }
   
-    before { shell "mkdir -p #{path.parent}" }
+    before { shell "mkdir -p \"#{path.parent}\"" }
     meet {
-      p "meeting"
       process_sources {|archive|
-        p "processing #{archive}"
-        `open .`
-        Dir.glob("**/#{name}").map {|entry|
-          p "finding #{entry}"
+        Dir.glob("*.bundle").map {|entry|
           log_shell "Installing #{entry}",
-                    "mv -v #{entry} #{path}"
+                    %Q{mv -v #{entry} "#{path}"}
         }
       }
     }
