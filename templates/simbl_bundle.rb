@@ -1,4 +1,3 @@
-# FIXME (it's extracting and placing CWD *inside* of the bundle')
 meta :simbl_bundle, :for => :osx do
   accepts_list_for :source
   accepts_list_for :extra_source
