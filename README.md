@@ -18,9 +18,12 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Sequel Pro
 * Mailplane
 * GitX
+* Dropbox
+* Things
 
 ### Started
 
+* Growl
 * Developer Tools + iPhone SDK/XCode
 * MockSMTP (not unpacking the zip)
 
@@ -32,7 +35,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Firefox extensions (firebug esp)
 * Chrome extensions
 * ZSH
-* Growl
 * SIMBL (http://www.culater.net/dl/files/SIMBL-0.9.7a.zip)
 * Set up iChat to have Bonjour (always on)
 * Colemak / QWERTY / Dvorak / Backspace on capslock hack
@@ -51,13 +53,14 @@ Setting up a machine for development involves a LOT of dependencies and time
   * Perian
   * Passenger
   * MySQL
-* Customised Terminal profiles
+* Customised Terminal profiles (http://github.com/xaviershay/babushka-deps/blob/master/terminal.rb)
   * Visor (http://cloud.github.com/downloads/darwin/visor/Visor-2.2-84d1873.zip)
   * Blurminal (http://github.com/timmfin/Blurminal/raw/master/Blurminal-SL-64bit.bundle.zip)
     * `defaults write com.apple.Terminal ‘Blurminal Radius’ -float 1.0`
   * ANSI colours (http://github.com/timmfin/terminalcolours/raw/master/TerminalColours-SL-64bit.zip)
   * terminal keyboard shortcuts: (http://bjeanes.com/2010/06/26/option-keyboard-shortcuts-for-terminal-and-iterm)
 * PlugSuit (http://www.macupdate.com/download.php/26068/download)
+* Common fonts
 
 ## Misc/Hacks/Preferences to set
 
