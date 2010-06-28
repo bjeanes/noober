@@ -7,11 +7,11 @@ meta :simbl_bundle, :for => :osx do
     prepare { setup_source_uris }
     
     helper :path do
-      "~/Library/Application Support/SIMBL/Plugins" / name
+      "/Library/Application Support/SIMBL/Plugins" / name
     end
     
     met? {
-      path.exists? or path.to_s.gsub(/^~/,'').p.exists?
+      path.exists? or ("~" / path).exists?
     }
   
     before { shell "mkdir -p \"#{path.parent}\"" }
