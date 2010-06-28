@@ -7,8 +7,9 @@ dep 'apps' do
            'TextMate.app',
            'Sequel Pro.app',
            'Mailplane.app',
-           # 'MockSMTP.app',
+           'MockSmtp.app',
            'GitX.app',
+           'MacVim.app'
 
            'textmate'
 end
