@@ -6,5 +6,6 @@ dep 'noober' do
            'apps',
            'textmate',
            'SIMBL',
-           'hax'
+           'hax',
+           'fonts'
 end
