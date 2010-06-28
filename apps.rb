@@ -10,7 +10,7 @@ dep 'apps' do
            'MockSmtp.app',
            'GitX.app',
            'MacVim.app',
-           'Growl.app',
+           'Growl.prefPane',
            'Dropbox.app',
            'Things.app',
            'textmate'
