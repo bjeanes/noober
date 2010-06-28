@@ -12,7 +12,6 @@ dep 'apps' do
            'MacVim.app',
            # 'Growl.app',
            'Dropbox.app',
-           'Things.app'
-
+           'Things.app',
            'textmate'
 end
