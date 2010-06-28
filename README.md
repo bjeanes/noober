@@ -20,6 +20,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * GitX
 * Dropbox
 * Things
+* MacVIM
 
 ### Started
 
@@ -29,7 +30,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 
 ### Future
 * RVM + standard rubies + gems
-* MacVIM + plugins
+* MacVIM plugins
 * Passenger
 * MySQL / Postgres
 * Firefox extensions (firebug esp)
