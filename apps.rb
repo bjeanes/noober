@@ -9,7 +9,10 @@ dep 'apps' do
            'Mailplane.app',
            'MockSmtp.app',
            'GitX.app',
-           'MacVim.app'
+           'MacVim.app',
+           'Growl.app',
+           'Dropbox.app',
+           'Things'
 
            'textmate'
 end
