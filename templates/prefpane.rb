@@ -10,6 +10,7 @@ meta :prefpane, :for => :osx do
     end
     
     met? {
+      # TODO use `system_profiler` to check that the prefpane is properly installed
       path.exists? or ("~" / path).exists?
     }
   

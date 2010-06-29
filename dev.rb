@@ -1,11 +1,15 @@
 installer 'iphone tools' do
-  met? { 
+  met? {
+    dev_tools = shell('system_profiler SPDeveloperToolsDataType')
+    
     which 'gcc' and 
     which 'g++' and
     which 'autoconf' and
     which 'make' and
     which 'ld' and
-    '/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator.app/Contents/MacOS/iPhone Simulator'.p.exists?
+    dev_tools.grep(/Mac OS X:/) and
+    dev_tools.grep(/iPhone OS:/) and
+    dev_tools.grep(/iPhone Simulator:/)
   }
 
   define_var :source,
