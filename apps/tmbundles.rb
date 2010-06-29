@@ -29,7 +29,7 @@ bundles = {
 }
 
 dep "textmate bundles" do
-  requires 'TextMate.app', *bundles.keys
+  requires 'TextMate.app', 'ProjectPlus.tmplugin', *bundles.keys
 end
 
 bundles.each do |name, url|

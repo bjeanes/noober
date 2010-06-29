@@ -1,5 +1,5 @@
 dep 'textmate' do
-  requires 'TextMate.app', 'textmate helper', 'textmate bundles'
+  requires 'TextMate.app', 'textmate helper', 'textmate bundles'#, 'TextMate.app.plist'
 end
 
 app 'TextMate.app' do
