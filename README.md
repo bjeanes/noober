@@ -54,6 +54,7 @@ Setting up a machine for development involves a LOT of dependencies and time
   * Perian
   * Passenger
   * MySQL
+* DTerm (http://www.decimus.net/dterm.php)
 * Customised Terminal profiles (http://github.com/xaviershay/babushka-deps/blob/master/terminal.rb)
   * Visor (http://cloud.github.com/downloads/darwin/visor/Visor-2.2-84d1873.zip)
   * Blurminal (http://github.com/timmfin/Blurminal/raw/master/Blurminal-SL-64bit.bundle.zip)
@@ -68,6 +69,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * `sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport`
 * turn universal access on (for applescripting interfaces, etc)
 * Set up file/folder reference patterns in TextMate
+* Set default file type of Textmate to ruby: `defaults write com.macromates.textmate OakDefaultLanguage E00B62AC-6B1C-11D9-9B1F-000D93589AF6`
 
 ## Notes
 
