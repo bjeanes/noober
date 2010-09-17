@@ -63,6 +63,7 @@ Setting up a machine for development involves a LOT of dependencies and time
   * terminal keyboard shortcuts: (http://bjeanes.com/2010/06/26/option-keyboard-shortcuts-for-terminal-and-iterm)
 * PlugSuit (http://www.macupdate.com/download.php/26068/download)
 * Common fonts
+* PeepOpen
 
 ## Misc/Hacks/Preferences to set
 

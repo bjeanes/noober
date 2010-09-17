@@ -1,8 +1,7 @@
 dep 'noober' do
   requires 'iphone tools',
-           'homebrew',
-           'macports',
            'git',
+           'homebrew',
            'apps',
            'textmate',
            'SIMBL',
