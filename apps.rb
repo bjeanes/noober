@@ -13,5 +13,6 @@ dep 'apps' do
            'Growl.prefpane',
            'Dropbox.app',
            'Things.app',
+           'RubyMine.app',
            'textmate'
 end
