@@ -14,5 +14,6 @@ dep 'apps' do
            'Dropbox.app',
            'Things.app',
            'RubyMine.app',
+           '1Password.app',
            'textmate'
 end
