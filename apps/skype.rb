@@ -1,3 +1,3 @@
-app 'Skype.app' do
+dep 'Skype.app' do
   source 'http://www.skype.com/go/getskype-macosx.dmg'
 end

@@ -1,5 +1,7 @@
 dep 'fonts' do
-  requires 'inconsolata'
+  requires 'inconsolata.font'
 end
 
-font('inconsolata') { source 'http://www.levien.com/type/myfonts/Inconsolata.otf' }
+dep 'inconsolata.font' do
+  source 'http://www.levien.com/type/myfonts/Inconsolata.otf'
+end

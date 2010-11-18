@@ -6,10 +6,10 @@ dep 'simbl_bundles' do
   requires %w(Blurminal Visor).map {|bundle| "#{bundle}.bundle"}
 end
 
-simbl_bundle 'Blurminal.bundle' do
+dep 'Blurminal.bundle', :template => "simbl_bundle" do
   source 'http://github.com/timmfin/Blurminal/raw/master/Blurminal-SL-64bit.bundle.zip'
 end
 
-simbl_bundle 'Visor.bundle' do
+dep 'Visor.bundle', :template => "simbl_bundle" do
   source 'http://cloud.github.com/downloads/darwin/visor/Visor-2.2-84d1873.zip'
 end

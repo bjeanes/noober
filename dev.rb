@@ -1,8 +1,8 @@
-installer 'iphone tools' do
+dep 'iphone tools', :template => "installer" do
   met? {
     dev_tools = shell('system_profiler SPDeveloperToolsDataType')
-    
-    which 'gcc' and 
+
+    which 'gcc' and
     which 'g++' and
     which 'autoconf' and
     which 'make' and

@@ -1,3 +1,3 @@
-app 'MockSmtp.app' do
+dep 'MockSmtp.app' do
   source 'http://mocksmtpapp.com/download'
 end

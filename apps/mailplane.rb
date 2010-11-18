@@ -1,12 +1,12 @@
-app 'Mailplane.app' do
-  version = case host.name
+dep 'Mailplane.app' do
+  version = case Babushka::Base.host.name
     when :tiger
-      'Tiger' 
+      'Tiger'
     when :leopard
       ''
     when :snow_leopard
       'SL'
   end
-  
-  source %Q{http://mailplaneapp.com/downloads/Mailplane#{version}_1337.dmg}
+
+  source %Q{http://mailplaneapp.com/downloads/Mailplane#{version}_1527.dmg}
 end

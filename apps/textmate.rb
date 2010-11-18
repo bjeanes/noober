@@ -2,8 +2,8 @@ dep 'textmate' do
   requires 'TextMate.app', 'textmate helper', 'textmate bundles'
 end
 
-app 'TextMate.app' do
-  source 'http://download-b.macromates.com/TextMate_1.5.9.dmg'
+dep 'TextMate.app' do
+  source 'http://download.macromates.com/TextMate_1.5.10.zip'
 end
 
 dep 'textmate helper' do
