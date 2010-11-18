@@ -36,7 +36,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Firefox extensions (firebug esp)
 * Chrome extensions
 * ZSH
-* SIMBL (http://www.culater.net/dl/files/SIMBL-0.9.7a.zip)
 * Set up iChat to have Bonjour (always on)
 * Colemak / QWERTY / Dvorak / Backspace on capslock hack
 * latest MacRuby
