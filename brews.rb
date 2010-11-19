@@ -40,6 +40,13 @@ dep 'sphinx.managed' do
   ]
 end
 
-dep 'graphviz.managed', :on => :osx do
-  met? { !shell("brew list --versions graphviz").blank? }
+dep('graphviz.managed') { provides [] }
+dep('readline.managed') { provides [] }
+
+dep 'imagemagick.managed' do
+  provides %w[
+    Magick-config MagickCore-config MagickWand-config
+    Wand-config animate compare composite conjure convert
+    display identify import mogrify montage stream
+  ]
 end
