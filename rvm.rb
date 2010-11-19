@@ -20,6 +20,8 @@ meta :rvm do
   accepts_list_for :configure
 
   template {
+    requires 'benhoskings:rvm'
+
     helper :patches do
       patch.empty? ? "" : "--patch #{patch * ","}"
     end
@@ -29,11 +31,11 @@ meta :rvm do
     end
 
     helper :ruby_name do
-      name.sub(/\.ruby$/,'')
+      name.sub(/\.rvm$/,'')
     end
 
     met? {
-      Dir["~/.rvm/rubies".p].any? { |ruby| ruby[ruby_name] }
+      Dir["~/.rvm/rubies/*".p].any? { |ruby| ruby[ruby_name] }
     }
 
     meet {
