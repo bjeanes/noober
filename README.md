@@ -64,6 +64,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * PlugSuit (http://www.macupdate.com/download.php/26068/download)
 * Common fonts
 * PeepOpen
+* Permissions for /Library/{Perl,Ruby,Python} corrected as per `homebrew` wiki page
 
 ## Misc/Hacks/Preferences to set
 
