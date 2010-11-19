@@ -7,5 +7,7 @@ dep 'noober' do
            'brews',
            'SIMBL',
            'hax',
-           'fonts'
+           'fonts',
+           # 'benhoskings:zsh.shell_setup', # currently broken?
+           'benhoskings:secured ssh logins'
 end
