@@ -4,6 +4,7 @@ dep 'noober' do
            'homebrew',
            'apps',
            'textmate',
+           'brews',
            'SIMBL',
            'hax',
            'fonts'
