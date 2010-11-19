@@ -2,11 +2,11 @@ dep 'brews' do
   brews = %w[
     mongodb redis mysql postgresql sphinx
     tree graphviz hub imagemagick wget v8
-    gist readline bash zsh fish ack ffmpeg
+    gist readline bash zsh fish ack postgis
     ec2-api-tools ec2-ami-tools growlnotify
     git git-flow lame node npm webkit2png
     bash-completion wireshark wkhtmltopdf
-    nmap nginx postgis redcar tmux
+    nmap nginx redcar ffmpeg tmux
   ].map { |brew| dep("#{brew}.managed") }
 
   requires ["homebrew", "iphone tools"] + brews
@@ -48,5 +48,17 @@ dep 'imagemagick.managed' do
     Magick-config MagickCore-config MagickWand-config
     Wand-config animate compare composite conjure convert
     display identify import mogrify montage stream
+  ]
+end
+
+dep 'postgis.managed' do
+  provides %w[
+    shp2pgsql
+    profile_intersects.pl
+    postgis_restore.pl
+    postgis_proc_upgrade.pl
+    pgsql2shp
+    new_postgis_restore.pl
+    create_undef.pl
   ]
 end
