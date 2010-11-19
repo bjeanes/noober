@@ -21,6 +21,8 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Dropbox
 * Things
 * MacVIM
+* RVM
+* Lots of brews
 
 ### Started
 
@@ -41,7 +43,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * latest MacRuby
 * Bind / DNSMasq
 * LaunchBar
-* Bash 4 (from homebrew?)
 * Setup dot-files
 * Fluid
 * http://github.com/xvzf/vcprompt
