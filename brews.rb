@@ -6,7 +6,8 @@ dep 'brews' do
     ec2-api-tools ec2-ami-tools growlnotify
     git git-flow lame node npm webkit2png
     bash-completion wireshark wkhtmltopdf
-    nmap nginx redcar ffmpeg tmux
+    nmap nginx redcar ffmpeg tmux oniguruma
+    pcre freeimage nmap
   ].map { |brew| dep("#{brew}.managed") }
 
   requires ["homebrew", "iphone tools"] + brews
