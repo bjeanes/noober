@@ -1,5 +1,5 @@
 dep 'brews' do
-  brews = %w(
+  brews = %w[
     mongodb redis mysql postgresql sphinx
     tree graphviz hub imagemagick wget v8
     gist readline bash zsh fish ack ffmpeg
@@ -7,7 +7,39 @@ dep 'brews' do
     git git-flow lame node npm webkit2png
     bash-completion wireshark wkhtmltopdf
     nmap nginx postgis redcar tmux
-  ).map { |brew| dep("#{brew}.managed") }
+  ].map { |brew| dep("#{brew}.managed") }
 
-  requires ["iphone tools"] + brews
+  requires ["homebrew", "iphone tools"] + brews
+end
+
+dep 'mongodb.managed' do
+  provides %w[
+    mongo mongod mongodump mongoexport
+    mongofiles mongoimport mongorestore
+    mongos mongosniff mongostat
+  ]
+end
+
+dep 'redis.managed' do
+  provides %w[redis-benchmark redis-check-aof redis-check-dump redis-cli redis-server]
+end
+
+dep 'postgresql.managed' do
+  provides %w[
+    psql
+    createdb createuser createlang
+    dropdb   dropuser   droplang
+  ]
+end
+
+dep 'sphinx.managed' do
+  provides %w[
+    spelldump
+    searchd search
+    indextool indexer
+  ]
+end
+
+dep 'graphviz.managed', :on => :osx do
+  met? { !shell("brew list --versions graphviz").blank? }
 end
