@@ -8,7 +8,7 @@ dep 'apps' do
            'Google Chrome.app',
            'Growl.prefpane',
            'benhoskings:LaunchBar.app',
-           'MacVim.app',
+           'macvim',
            'Mailplane.app',
            'MockSmtp.app',
            'RubyMine.app',
