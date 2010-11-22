@@ -15,6 +15,10 @@ dep 'rvm setup with rubies' do
   ]
 end
 
+dep 'macruby.rvm' do
+  requires dep("llvm.managed")
+end
+
 meta :rvm do
   accepts_list_for :patch
   accepts_list_for :configure
