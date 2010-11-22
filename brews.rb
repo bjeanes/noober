@@ -7,7 +7,7 @@ dep 'brews' do
     git git-flow lame node npm webkit2png
     bash-completion wireshark wkhtmltopdf
     nmap nginx redcar ffmpeg tmux oniguruma
-    pcre freeimage nmap
+    pcre freeimage nmap ctags
   ].map { |brew| dep("#{brew}.managed") }
 
   requires ["homebrew", "iphone tools"] + brews
