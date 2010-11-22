@@ -3,7 +3,15 @@ dep 'MacVim.app' do
 end
 
 dep 'macvim' do
-  requires 'MacVim.app'
+  requires 'MacVim.app', 'macvim janus', 'macvim janus update'
+end
+
+dep 'macvim janus' do
   met? { "~/.vim/.git".p.exists? }
-  meet { shell "curl http://github.com/carlhuda/janus/raw/master/bootstrap.sh -o - | sh" }
+  meet { shell "git clone git://github.com/carlhuda/janus.git ~/.vim" }
+end
+
+dep 'macvim janus update', :template => "task" do
+  requires 'macvim janus'
+  run { in_dir("~/.vim".p) { shell "rake" } }
 end
