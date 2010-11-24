@@ -84,11 +84,6 @@ Setting up a machine for development involves a LOT of dependencies and time
 * sudo sysctl -w kern.sysv.shmall=65536
 * sudo sysctl -w kern.sysv.shmmax=16777216
 
-### Future
-* RVM + standard rubies + gems
-* MacVIM plugins
-* Passenger
-
 ## Notes
 
 * Use Sparkle RSS locations to get the latest version of each app for download so versions don't need to be maintained
