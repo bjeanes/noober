@@ -67,6 +67,13 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Common fonts
 * PeepOpen
 * Permissions for /Library/{Perl,Ruby,Python} corrected as per `homebrew` wiki page
+* Pretty much everything in: http://blog.therubymug.com/blog/2010/05/20/the-install-osx.html#fn2
+* Global rvm gems:
+  * pg
+  * mysql
+  * open\_gem
+* Set up Adium, Skype, iChax logs to sync through Drop Box (by
+  symlinking)
 
 ## Misc/Hacks/Preferences to set
 
@@ -74,6 +81,13 @@ Setting up a machine for development involves a LOT of dependencies and time
 * turn universal access on (for applescripting interfaces, etc)
 * Set up file/folder reference patterns in TextMate
 * Set default file type of Textmate to ruby: `defaults write com.macromates.textmate OakDefaultLanguage E00B62AC-6B1C-11D9-9B1F-000D93589AF6`
+* sudo sysctl -w kern.sysv.shmall=65536
+* sudo sysctl -w kern.sysv.shmmax=16777216
+
+### Future
+* RVM + standard rubies + gems
+* MacVIM plugins
+* Passenger
 
 ## Notes
 
