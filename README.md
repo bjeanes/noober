@@ -23,6 +23,8 @@ Setting up a machine for development involves a LOT of dependencies and time
 * MacVIM
 * RVM
 * Lots of brews
+* Set up Skitch to store all settings and images in Drop Box (by
+  symlinking)
 
 ### Started
 
