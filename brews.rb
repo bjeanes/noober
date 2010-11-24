@@ -7,7 +7,10 @@ dep 'brews' do
     git git-flow lame node npm webkit2png
     bash-completion wireshark wkhtmltopdf
     nmap nginx redcar ffmpeg tmux oniguruma
-    pcre freeimage nmap ctags llvm
+    pcre freeimage nmap ctags-exuberant
+    llvm mysql-connector-c markdown proctools
+    openssl
+
   ].map { |brew| dep("#{brew}.managed") }
 
   requires ["homebrew", "iphone tools"] + brews
@@ -33,7 +36,15 @@ dep 'postgresql.managed' do
   ]
 end
 
+dep 'mysql-connector-c.managed' do
+  requires 'mysql.managed'
+
+  provides []
+end
+
 dep 'sphinx.managed' do
+  requires 'postgresql.managed', 'mysql.managed'
+
   provides %w[
     spelldump
     searchd search
@@ -53,6 +64,8 @@ dep 'imagemagick.managed' do
 end
 
 dep 'postgis.managed' do
+  requires 'postgresql.managed'
+
   provides %w[
     shp2pgsql
     profile_intersects.pl
@@ -168,6 +181,8 @@ dep 'ec2-api-tools.managed' do
 end
 
 dep 'ec2-ami-tools.managed' do
+  requires 'ec2-api-tools.managed'
+
   provides %w[
     ec2-ami-tools-version ec2-bundle-vol        ec2-download-bundle
     ec2-migrate-manifest  ec2-upload-bundle     ec2-bundle-image
