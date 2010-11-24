@@ -25,24 +25,24 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Lots of brews
 * Set up Skitch to store all settings and images in Drop Box (by
   symlinking)
+* RVM + standard rubies + gems
+* latest MacRuby (should do it through RVM)
+* MySQL / Postgres (through brew)
+* Growl
+* MockSMTP
+* ZSH
 
 ### Started
 
-* Growl
 * Developer Tools + iPhone SDK/XCode
-* MockSMTP (not unpacking the zip)
 
 ### Future
-* RVM + standard rubies + gems
 * MacVIM plugins
 * Passenger
-* MySQL / Postgres
 * Firefox extensions (firebug esp)
 * Chrome extensions
-* ZSH
 * Set up iChat to have Bonjour (always on)
 * Colemak / QWERTY / Dvorak / Backspace on capslock hack
-* latest MacRuby
 * Bind / DNSMasq
 * LaunchBar
 * Setup dot-files
