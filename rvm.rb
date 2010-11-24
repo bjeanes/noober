@@ -6,6 +6,7 @@ end
 
 dep 'rvm setup with rubies' do
   requires [
+    dep("openssl.managed"),
     "rvm default 1.9.2",
     dep("macruby.rvm"),
     dep("1.8.7.rvm"),
@@ -21,7 +22,7 @@ end
 
 meta :rvm do
   accepts_list_for :patch
-  accepts_list_for :configure
+  accepts_list_for :configure, ["--enable-shared=yes"]
 
   template {
     requires 'benhoskings:rvm'
