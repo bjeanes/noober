@@ -1,5 +1,4 @@
 dep 'hax' do
-  requires 'simbl_bundles'
 end
 
 dep 'simbl_bundles' do
