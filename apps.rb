@@ -1,7 +1,7 @@
 dep 'apps' do
   requires 'Adium.app',
            '1Password.app',
-           'Dropbox.app',
+           'dropbox',
            'Firefox.app',
            'benhoskings:Fluid.app',
            'GitX.app',
