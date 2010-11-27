@@ -1,3 +1,3 @@
 dep 'Adium.app' do
-  source "http://adiumx.cachefly.net/Adium_1.3.10.dmg"
+  source "http://download.adium.im/Adium_1.4.1.dmg"
 end
