@@ -4,6 +4,6 @@ dep 'dotfiles' do
   meet {
     shell "mv ~/.config ~/.config.old" if "~/.config".p.exists?
     shell "git clone git@github.com:bjeanes/dot-files.git ~/.config"
-    shell "cd ~/.config && rake"
+    shell "cd ~/.config && yes | rake install"
   }
 end
