@@ -38,6 +38,8 @@ Setting up a machine for development involves a LOT of dependencies and time
 
 ### Future
 * "after" steps for homebrew installations (e.g. launchctl stuff)
+* MacVIM 'mvim' command (macvim brew is failing and .app template
+  ignores all but the .app in source zip/tgz)
 * MacVIM plugins
 * Passenger
 * Firefox extensions (firebug esp)
