@@ -31,6 +31,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Growl
 * MockSMTP
 * ZSH
+* Setup dot-files
 
 ### Started
 
@@ -40,15 +41,17 @@ Setting up a machine for development involves a LOT of dependencies and time
 * "after" steps for homebrew installations (e.g. launchctl stuff)
 * MacVIM 'mvim' command (macvim brew is failing and .app template
   ignores all but the .app in source zip/tgz)
+* Configure iTerm colours to match railscasts them
 * MacVIM plugins
 * Passenger
 * Firefox extensions (firebug esp)
 * Chrome extensions
+  * https://chrome.google.com/extensions/detail/ddngkjbldiejbheifcmnfmmfiniimbbg# (Pretty JSON)
 * Set up iChat to have Bonjour (always on)
 * Colemak / QWERTY / Dvorak / Backspace on capslock hack
 * Bind / DNSMasq
 * LaunchBar
-* Setup dot-files
+* AppCleaner
 * Fluid
 * http://github.com/xvzf/vcprompt
 * SizeUp
@@ -77,6 +80,10 @@ Setting up a machine for development involves a LOT of dependencies and time
   * open\_gem
 * Set up Adium, Skype, iChax logs to sync through Drop Box (by
   symlinking)
+* Brews that require launchctl installations should install the scripts
+  and load them!
+* App License (from dropbox)
+  * 1password: ~/Library/1Password/License/
 
 ## Misc/Hacks/Preferences to set
 
