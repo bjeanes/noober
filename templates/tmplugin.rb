@@ -3,20 +3,19 @@ meta :tmplugin, :for => :osx do
 
   template {
     requires 'TextMate.app'
-    
+
     helper :path do
-      '~/Library/Application Support/TextMate/PlugIns' / name
+      '~/Library/Application Support/TextMate/PlugIns'.p.expand / name
     end
-    
+
     before { shell "mkdir -p \"#{path.parent}\"" }
-    
+
     met? { path.dir? }
     meet {
       process_sources {|archive|
-        p archive
         Dir.glob("{./,../}*.tmplugin").map {|entry|
           # log_shell "Installing #{entry}",
-          p          %Q{mv -v #{entry} "#{path}"}
+          %Q{mv -v #{entry} "#{path}"}
         }
       }
     }
