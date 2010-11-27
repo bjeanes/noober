@@ -1,6 +1,5 @@
 meta :dropboxed do
   accepts_list_for :files
-  accepts_value_for :dropbox, :default => "~/Dropbox"
 
   template do
     requires ['dropbox', "#{name.sub(/\.dropboxed$/,'')}.app"]
@@ -14,7 +13,7 @@ meta :dropboxed do
     }
 
     meet {
-      app_data = "#{dropbox}/Application Data/#{app_name}".p.expand
+      app_data = "~/Dropbox/Application Data/#{app_name}/".p.expand
       cmd_app_data = app_data.to_s.inspect
 
       shell "killall #{app_name}"
@@ -22,8 +21,11 @@ meta :dropboxed do
 
       files.each do |file|
         file = file.p.expand
+        p "mv -n #{file.to_s.inspect} #{cmd_app_data}"
+        p "ln -s #{(app_data / file.basename).to_s.inspect} #{file.to_s.inspect}"
+        abort
         shell "mv -n #{file.to_s.inspect} #{cmd_app_data}" if file.exists? && !file.symlink?
-        shell "ln -s #{(app_data / file.basename).to_s.inspect} #{cmd_app_data}" unless file.symlink?
+        shell "ln -s #{(app_data / file.basename).to_s.inspect} #{file.to_s.inspect}" unless file.symlink?
       end
     }
   end
