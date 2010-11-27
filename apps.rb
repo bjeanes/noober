@@ -1,5 +1,5 @@
 dep 'apps' do
-  requires 'Adium.app',
+  requires 'adium',
            '1Password.app',
            'dropbox',
            'Firefox.app',
