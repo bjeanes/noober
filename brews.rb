@@ -13,7 +13,7 @@ dep 'brews' do
 
   ].map { |brew| dep("#{brew}.managed") }
 
-  requires ["homebrew", "iphone tools"] + brews
+  requires ["homebrew"] + brews
 end
 
 dep 'mongodb.managed' do
@@ -187,5 +187,17 @@ dep 'ec2-ami-tools.managed' do
     ec2-ami-tools-version ec2-bundle-vol        ec2-download-bundle
     ec2-migrate-manifest  ec2-upload-bundle     ec2-bundle-image
     ec2-delete-bundle     ec2-migrate-bundle    ec2-unbundle
+  ]
+end
+
+dep 'llvm.managed' do
+  provides %w[
+    bugpoint        llvm-diff       llvm-prof
+    llc             llvm-dis        llvm-ranlib
+    lli             llvm-extract    llvm-stub
+    llvm-ar         llvm-ld         llvmc
+    llvm-as         llvm-link       opt
+    llvm-bcanalyzer llvm-mc         tblgen
+    llvm-config     llvm-nm
   ]
 end
