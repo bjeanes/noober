@@ -20,9 +20,14 @@ dep 'macruby.rvm' do
   requires dep("llvm.managed")
 end
 
+dep 'rbx.rvm' do
+  requires dep("llvm.managed")
+  configure []
+end
+
 meta :rvm do
   accepts_list_for :patch
-  accepts_list_for :configure, ["--enable-shared=yes"]
+  accepts_list_for :configure, ["enable-shared"]
 
   template {
     requires 'benhoskings:rvm'
