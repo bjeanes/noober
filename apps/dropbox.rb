@@ -10,5 +10,5 @@ dep 'dropbox directory exists' do
 end
 
 dep 'Dropbox.app' do
-  source 'https://www.dropbox.com/download?plat=mac'
+  source 'http://cdn.dropbox.com/Dropbox%200.7.110.dmg'
 end

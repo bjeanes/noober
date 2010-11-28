@@ -5,7 +5,7 @@ dep 'apps' do
            'Firefox.app',
            'benhoskings:Fluid.app',
            'GitX.app',
-           'Google Chrome.app',
+           'chrome',
            'Growl.prefpane',
            'benhoskings:LaunchBar.app',
            'macvim',
