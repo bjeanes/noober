@@ -32,6 +32,7 @@ Setting up a machine for development involves a LOT of dependencies and time
 * MockSMTP
 * ZSH
 * Setup dot-files
+* Installs Colemak
 
 ### Started
 
@@ -48,7 +49,10 @@ Setting up a machine for development involves a LOT of dependencies and time
 * Chrome extensions
   * https://chrome.google.com/extensions/detail/ddngkjbldiejbheifcmnfmmfiniimbbg# (Pretty JSON)
 * Set up iChat to have Bonjour (always on)
-* Colemak / QWERTY / Dvorak / Backspace on capslock hack
+* Backspace on capslock hack
+* Add Colemak input option (http://www.afp548.com/forum/viewtopic.php?showtopic=26259)
+  * Set as default
+  * Change the keyboard shortcut
 * Bind / DNSMasq
 * LaunchBar
 * AppCleaner
@@ -84,6 +88,10 @@ Setting up a machine for development involves a LOT of dependencies and time
   and load them!
 * App License (from dropbox)
   * 1password: ~/Library/1Password/License/
+* Configure menu extras: defaults read com.apple.systemuiserver
+* Get the slocate database running: sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+* Add zsh and bash brews to /etc/shells
+* Set zsh as default shell (from brew)
 
 ## Misc/Hacks/Preferences to set
 
