@@ -1,19 +1,65 @@
 dep 'brews' do
   brews = %w[
-    mongodb redis mysql postgresql sphinx
+    mongodb redis mysql mysql-connector-c
+    postgis postgresql sphinx markdown
     tree graphviz hub imagemagick wget v8
-    gist readline bash zsh fish ack postgis
+    gist readline bash zsh fish ack openssl
     ec2-api-tools ec2-ami-tools growlnotify
     git git-flow lame node npm webkit2png
     bash-completion wireshark wkhtmltopdf
-    nmap nginx redcar ffmpeg tmux oniguruma
-    pcre freeimage nmap ctags-exuberant
-    llvm mysql-connector-c markdown proctools
-    openssl
-
+    nmap nginx ffmpeg tmux oniguruma
+    pcre freeimage ctags proctools llvm
   ].map { |brew| dep("#{brew}.managed") }
 
-  requires ["homebrew"] + brews
+  requires ["homebrew", "mercurial"] + brews
+end
+
+dep 'mercurial' do
+  requires dep('pip.managed')
+  met? { which 'hg' }
+  meet {
+    shell 'pip install mercurial'
+    shell 'ln -s /usr/local/Cellar/python/2.7/bin/hg /usr/local/bin/hg'
+  }
+end
+
+dep 'bash-completion.managed' do
+  provides []
+end
+
+dep 'oniguruma.managed' do
+  provides ['onig-config']
+end
+
+dep 'pcre.managed' do
+  provides %w[
+    pcretest
+    pcregrep
+    pcre-config
+  ]
+end
+
+dep 'pip.managed' do
+  requires dep('python.managed')
+end
+
+dep 'proctools.managed' do
+  provides %w[
+    pkill
+    pgrep
+    pfind
+  ]
+end
+
+dep 'freeimage.managed' do
+  provides []
+end
+
+dep 'wireshark.managed' do
+  provides %w[
+    capinfos  dumpcap   idl2wrs   randpkt   text2pcap
+    dftest    editcap   mergecap  rawshark  tshark
+  ]
 end
 
 dep 'mongodb.managed' do
