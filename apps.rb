@@ -19,3 +19,13 @@ dep 'apps' do
            'Things.app',
            'textmate'
 end
+
+dep 'iChat.app' do
+  met? { true }
+end
+
+dep 'iChat.dropboxed' do
+  files %w[
+    ~/Documents/iChats
+  ]
+end
