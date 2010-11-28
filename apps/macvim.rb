@@ -7,7 +7,7 @@ dep 'macvim' do
 end
 
 dep 'macvim janus' do
-  requires dep('ctags.managed')
+  requires dep('ctags.managed'), dep('ack.managed')
 
   met? { "~/.vim/.git".p.exists? }
   meet { shell "git clone git://github.com/carlhuda/janus.git ~/.vim" }
